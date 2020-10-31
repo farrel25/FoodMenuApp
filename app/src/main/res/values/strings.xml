@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Food Menu</string>
+    <string name="text_greet">Good Morning, Farrel!</string>
+    <string name="text_hero1">Grab your</string>
+    <string name="text_hero2">delicious meal!</string>
+    <string name="text_title_menu_list">Our Menu</string>
+    <string name="text_title_price">Price</string>
+    <string name="text_btn_order">Order Now</string>
+</resources>

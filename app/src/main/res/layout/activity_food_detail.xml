@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetailActivity"
+    android:orientation="vertical"
+    android:background="@color/backgroundWhite2"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_item_photo_detail"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            tools:src="@color/textGray1"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+        <ImageView
+            android:id="@+id/layout_divider"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/detail_activity_content_background"
+            android:layout_marginTop="320dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/text_detail_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_divider"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_item_name_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Food Name"
+                android:textColor="@color/textBlack"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_rating_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="4.9"
+                android:textSize="18sp"
+                android:drawablePadding="6dp"
+                android:layout_marginTop="4dp"
+                app:drawableEndCompat="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/tv_item_description_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with various ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven"
+                android:textColor="@color/textGray2"
+                android:layout_marginTop="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_title_price"
+                        android:textColor="@color/textGray2"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item_price_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Rp. 80.000"
+                        android:textColor="@color/textBlack"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/basicOrange"
+                    android:text="@string/text_btn_order"
+                    android:textColor="@color/textBlack"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="btnActionOrder"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

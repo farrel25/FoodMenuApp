@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundWhite2"
+    android:padding="20dp"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_greet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_greet"
+        android:textColor="@color/textBlack"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_hero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_hero1"
+        android:textColor="@color/textBlack"
+        android:textSize="32sp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_hero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_hero2"
+        android:textColor="@color/textBlack"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_our_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title_menu_list"
+        android:textColor="@color/textBlack"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_foods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:listitem="@layout/item_food_cardview"
+        />
+</LinearLayout>
